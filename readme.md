@@ -6,7 +6,7 @@ You can play it on devices with keyboard input (PC).
 
 :star: Please add me a star if you like my first project!  :star:
 
-Here is the link to the game: https://giovannitakeshisesta.github.io/South-park-Game/
+Here is the link to the game: https://github.com/giovannitakeshisesta/South-Park-The-Game
 
 
 ## The making of
