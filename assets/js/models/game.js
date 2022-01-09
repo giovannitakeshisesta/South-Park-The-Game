@@ -225,7 +225,10 @@ class Game {
     if (this.guests.filter(e => e.AmIGrabbed === true).length === 0){
       this.guests.forEach(guest => { 
         const condition = this.collides(this.player,guest);  
-        if (condition && this.player.space && (this.kennyArr.length === 0 || this.kennyArr.some(e => !e.AmIGrabbed)) ) {  
+        if (condition && this.player.space && 
+            this.guests.filter(e => e.AmIGrabbed === true).length === 0 &&
+            (this.kennyArr.length === 0  || this.kennyArr.some(e => !e.AmIGrabbed)) ) {  
+
           guest.AmIGrabbed = true;
         } 
       });
@@ -357,7 +360,6 @@ class Game {
         this.counterFalling = 0;
       }
     }
-    
   }
 
   CollissionKennyCow() {
@@ -416,7 +418,6 @@ class Game {
         this.gameOver();
       }
     }
-    
   }
 
   congratulations() {

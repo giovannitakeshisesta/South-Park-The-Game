@@ -1,23 +1,23 @@
 # South Park, The Game
 
-Hi, my name is Giovanni Takeshi Sesta student of Web Develpment at the Ironkack Bootcamp in Madrid and this videogame is my project for the end of the module 1 of the course.
+Hi, my name is Giovanni Takeshi Sesta, I am a student of Web Develpment at the Ironkack Bootcamp in Madrid and this videogame is my project for the end of the module 1 of the course.
 
-You can play it on devices with keyboard input (PC).
+You can play it on any device with keyboard input (PC).
 
-:star: Please add me a star if you like my first project!  :star:
+:star: Please give me a star if you like my first project!  :star:
 
 Here is the link to the game: https://giovannitakeshisesta.github.io/South-Park-The-Game/
 
 ## The making of
-I will show you how is structured the core of the game and the most relevant line of code I used.
+I will show you how the core of the game is structured and the most relevant lines of code I used.
 
-The time line of the developping of the project was basicly this one:
+Below you'll see the time line of the project and the percentage of time on each task:
 
-- 15% -  Learning how to use Photoshop....
+- 15% - Learning how to use Photoshop....
 
 - 15% - Creating all the single elements of the game: the background, the player, the characters.
 
-- 40% - Interactions between all the elements considering a lot of different conditions.
+- 40% - Interactions between all the elements considering many different conditions.
  
  - 5% - Game playability: positioning the characters, the obstacles and the finish line, setting the characters speed, the hit points.
 
@@ -55,10 +55,10 @@ this.background = [
 ## The Player
 <img src="/assets/imgs/readme_img/cartman.png" width="400" height="200">
 
-The Player class has 4 animations : stand still, moving left or right, falling.  
+The Player class has 4 animations : standing still, moving left or right, falling.  
 
 When a direction key is pressed, we pass to the animation() function 3 arguments:  
-- the line of the spritesheet, 
+- the line of the sprite sheet, 
 - the starting frame, 
 - the ending frame.  
 
@@ -88,7 +88,7 @@ animation(y,startX, endX){
 
 <img src="/assets/imgs/readme_img/3cows.png" width="200" height="200">
 
-The generateCow() function, add cows to the cows array.
+The generateCow() function add cows to the cows array.
 
 It creates a new instance of a Cow every X amount of time (e.g.250), passing as arguments: 
 
@@ -113,7 +113,7 @@ generateCow(){
 }
 ```
 <br />
-The move() function of the Cow class, move each cow: 
+The move() function of the Cow class moves each cow: 
 
 - on the X axis, towards right,
 
@@ -160,17 +160,17 @@ this.guests = [
 #
 ## The game logic
 
-The collision between two elements is the triggering event for the most of the action in the game.
+The collision between two elements is the triggering event for most of the action in the game.
 
 We are going to use the collision function in a lot of different cases, for example 
 
-- if the player  collides with a guest, is allowed to grab him;
+- if the player  collides with a guest, they are allowed to grab him;
 
-- if the guest is thrown at a cow, when collides, the cow explode;
+- if the guest is thrown at a cow, when they collide, the cow explodes;
 
-- if the player collides with a poop or a cow , the hit points total decrease;
+- if the player collides with poop or a cow, the hit points total decrease;
 
-- if Kenny collides with a cow... die.
+- if Kenny collides with a cow... he dies.
 
 ```JS
 collides(element_1,element_2) {  // left right top bottom
@@ -187,7 +187,7 @@ collides(element_1,element_2) {  // left right top bottom
 ```
 #
 ## Grabbing & Holding a guest
-When the player collides with a guest and Space is pressed, the coordinates of the guest will be the same of the top of the player.
+When the player collides with a guest and Space is pressed, the coordinates of the guest will be the same as the top of the player.
 ```JS
 // if the player IS NOT holding a guest,
 // if the player touch a guest,  
@@ -217,7 +217,7 @@ CollissionPlayerGuest() {
 ```
 #
 ## Release or Throw a guest
-If the player is holding a guest and Space is pressed, if there are cows in the canvas, the guest will fly to them; if there are no cows in the canvas, the guest will be released.
+If the player is holding a guest and Space is pressed, if there are cows in the canvas, the guest will fly at them; if there are no cows in the canvas, the guest will be released.
 
 ```JS
 throwGuest(){
@@ -255,7 +255,7 @@ releaseGuest(){
 
 #
 ## End of the game
-When the game is over, we want the game to stop immediately or after few seconds, and show a game over message.
+When the game is over, the game stops immediately or after a few seconds, and shows a game over message.
 ```JS
 finishGame(){
 // if the player pass the finish line: 
@@ -311,7 +311,7 @@ gameOver() {
 #
 ## Other useful functions and event listeners:
 ### Canceling an event
-This function prevent the scrolling of the webpage while playing and pushing Arrow or Space keys.
+This function prevents the scrolling of the webpage while playing and pushing Arrow or Space keys.
 ```JS
 var keys = {};
 window.addEventListener("keydown",
@@ -331,7 +331,7 @@ false);
 
 This function allows you to show a button on the canvas at a specific moment of the game, reloading the game without refreshing the page manually.
 
-When the event "reload" is dispatched, an event listener remove the CSS class hidden from the HTML button, so the button appears.
+When the event "reload" is dispatched, an event listener removes the CSS class hidden from the HTML button, so the button appears.
 
 ```JS
 // game.js  
