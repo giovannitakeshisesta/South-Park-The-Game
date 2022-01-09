@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <div class="navbar">
+    <div class="topLeft">
+      <img class="logo" src="assets/imgs/webpage/logo.png" alt="logo">
+      <h1>SOUTH PARK</h1>
+      <h1>Cow Stampede 2</h1>
+    </div>
+
+    <div id="topRight">
+      <a href="#section2">Intro</a>
+      <a href="https://github.com/giovannitakeshisesta/South-park-Game" target="_blank">Making of</a>
+    </div>
+  </div>
+
+
+  <!--  SECTION 1 -->
+  <div class="section1">
+    
+    <div id="gameBoard">
+      <!-- canvas -->
+      <canvas id="game" width="900" height="550" ></canvas>
+    
+      <!-- start btn -->
+      <a href="#" id="startBtn">
+        <img src="assets/imgs/start_button.gif" class="game-btn" alt="start_button">
+      </a>
+
+      <!-- RE-start btn -->
+      <a href="#" id="tryAgain" class="hidden">
+        <img src="assets/imgs/tryAgain.png" class="game-btn2" alt="try again">
+      </a>
+     
+      <!-- image background  -->
+      <img src="assets/imgs/postcard.png" id="postcard" alt="postcard">
+    </div>
+
+    <!-- SIDE SECTION -->
+    <div class="side">
+
+      <div class="intro ">
+        <h4>You have to run faster than the cows! </h4>
+        <h4>Trying to not step on poop and... </h4>
+        <h4>...you have to save Kenny!</h4>
+      </div>
+      
+      <div>
+        <h2>Commands:</h2>
+        <img class="arrows" src="assets/imgs/webpage/arrows.png" alt="arrows">  
+      </div>
+
+      <div>
+        <p>Grab Kenny pressing "SPACE"</p>
+        <p>and leave him out of the road.</p>
+        <p>You can also grab the audience </p>
+        <p>and throw them at the cows!</p>
+        <img class="spacebar" src="assets/imgs/webpage/space bar.png" alt="space bar">
+      </div>
+      
+      <div>
+        <p>If you need to pee... press "P"</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!--  SECTION 2 -->
+  <div id="section2">
+
+    <a href="https://www.ironhack.com/en" target="_blank">
+      <img class="logoIH" src="assets/imgs/webpage/ironhack_logo.png" alt="IH logo">
+    </a>
+    
+    <div class="inSection2">
+      <h2>Hi, my name is <strong>Giovanni Takeshi Sesta</strong>,</h2> 
+      <h2>student of Web Develpment at the Ironkack Bootcamp in Madrid. </h2>
+      <h2>This videogame is my project for the end of the module 1 of the course.</h2>      
+    </div>
+
+  </div>
+  
+  <!--  SECTION 3 -->
+  <div id="section3">
+
+    <h1>How Was Done</h1>
+    <p>The idea was to make an arcade game like the old classics, Space invaders, Froggy, Snake etc. </p>
+    <p>I am a great fan of South Park , so I thought it could be entertaining developing my own South Park videogame.</p>
+    <p>The goal  was to learn how to work with DOM manipulation, Object Oriented Programming, and the use of event listeners.</p>
+    
+    <div class="languages">
+      <div class="square">
+        <img src="assets/imgs/webpage/js.png" alt="JS">
+        <p>JAVASCRIPT <br> no frameworks <br>The logic</p>
+      </div>
+      <div class="square">
+        <img src="assets/imgs/webpage/html.png" alt="HTML">
+        <p>HTML <br>The canvas</p>
+      </div>
+      <div class="square">
+        <img src="assets/imgs/webpage/css.png" alt="CSS">
+        <p>CSS <br>The style of the web page</p>
+      </div>
+      <div class="square">
+        <img src="assets/imgs/webpage/PS.png" alt="PS">
+        <p>PHOTOSHOP<br> Sprites and images editing</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <img src="assets/imgs/webpage/github.png" alt="git hub icon">
+      <a href="https://github.com/giovannitakeshisesta" target="_blank">github.com/giovannitakeshisesta</a>
+    </div>
+    
+    <div>
+      <img src="assets/imgs/webpage/mail1.png" alt="mail">
+      <a href = "mailto: giovannitakeshisesta@gmail.com">giovannitakeshisesta@gmail.com</a>
+    </div>
+    
+    <div>
+      <img src="assets/imgs/webpage/world.png" alt="world">
+      <a href ="#" >Madrid 01-2022</a>
+    </div>
+    
+  </footer>
+
+<!-- SCRIPT -->
+  <!-- <video id="video1" controls width="270" >
+    <source src="assets/imgs/cowstampede.mp4" type='video/mp4'>
+  </video> -->
+
+  <script src="./assets/js/models/poop.js"></script>
+  <script src="./assets/js/models/kenny.js"></script>
+  <script src="./assets/js/models/explosion.js"></script>
+  <script src="./assets/js/models/healthbar.js"></script>
+  <script src="./assets/js/models/guest.js"></script>
+  <script src="./assets/js/models/backclass.js"></script>
+  <script src="./assets/js/models/constants.js"></script>
+  <script src="./assets/js/models/player.js"></script>
+  <script src="./assets/js/models/cow.js"></script>
+  <script src="./assets/js/models/game.js"></script>
+  <script src="./assets/js/models/finish.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>

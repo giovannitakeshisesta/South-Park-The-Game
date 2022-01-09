@@ -1,0 +1,292 @@
+body{
+  box-sizing: border-box;
+  margin: 0px;
+  background:linear-gradient(0.25turn,#1e493e,#3a8b76) ;
+}
+
+/*  navbar  */
+@media (max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .topLeft{
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  h1{
+    line-height: 0px;
+  }
+
+  .logo{
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px){
+  .navbar{
+    padding: 0 50px;
+  }
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1{
+  color: white;
+  font-weight: 300;
+  padding-right: 20px;
+}
+
+.topLeft{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  height: 40px;
+  margin-right: 20px;
+}
+
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* SECTION  CANVAS*/
+.section1{
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+@media (max-width: 1299px){
+  .section1{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1300px){
+  .section1{
+    flex-direction: row;
+  }
+}
+
+#gameBoard{
+  height: 550px;
+  width: 900px;
+  right: 900px;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+#postcard{
+  position: relative;
+  width: 900px;
+  height: 550px;
+  left: 1px;
+  top: -555px;
+  z-index: 1;
+}
+
+#startBtn {
+  position: absolute;
+  transform: translate(360%,-480%);
+  z-index: 2;
+}
+
+.game-btn {
+  cursor: pointer;
+  height: 70px;
+}
+
+.game-btn:hover {
+  transform: scale(0.95);
+}
+
+.hidden{
+  display: none;
+}
+
+#tryAgain {
+  position: absolute;
+  transform: translate(330%,-200%);
+  z-index: 2;
+}
+.game-btn2 {
+  cursor: pointer;
+  height: 70px;
+}
+.game-btn2:hover {
+  transform: scale(0.95);
+}
+
+/* SIDE */
+.side{
+  background-color: #d3eed1;
+  opacity: 0.8;
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 999px){
+  .side{
+    flex-direction: column;
+  }
+}
+@media (min-width: 1000px)and(max-width: 1299px){
+  .side{
+    width: 860px;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1300px){
+  .side{
+    flex-direction: column;
+  }
+}
+
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4{
+  font-size: 17px;
+  line-height: 0.1px;
+}
+
+h2{
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.side p{
+  line-height: 1px;
+  text-align: center;
+}
+
+.spacebar{
+  height: 50px;
+}
+
+.arrows{
+  height: 100px;
+}
+
+
+
+
+/* SECTION 2 */
+#section2{
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIH{
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#section2 h2{
+  font-weight: 100;
+}
+
+.inSection2{
+  color: rgba(255, 255, 255, 0.808);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+/* section 3 */
+#section3{
+  background-color: white;
+  padding: 1px 50px 40px;
+}
+
+#section3 H1{
+  color: #3a8b76;
+  text-align: center;
+}
+
+#section3 p{
+  text-align: center;
+  font-size: 20px;
+}
+
+.languages{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.square{
+  border: 2px solid rgb(197, 195, 195);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #388773;
+
+  height: 250px;
+  width: 230px;
+  margin-top: 20px;
+  padding-top: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.languages img{
+  height: 130px;
+}
+
+/* FOOTER */
+footer{
+  height: 60px;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer div{
+  display: flex;
+}
+
+footer img{
+  height: 40px;
+  margin-bottom: 10px;
+}
